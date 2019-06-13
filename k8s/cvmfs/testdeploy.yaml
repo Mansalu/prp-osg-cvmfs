@@ -21,27 +21,27 @@ spec:
          command: [ "/bin/sh", "-c", "trap : TERM INT; (while true; do sleep 1000; done) & wait" ]
          volumeMounts:
            - name: cvmfs-oasis
-             mountPath: /oasis.opensciencegrid.org
+             mountPath: /cvmfs/oasis.opensciencegrid.org
            - name: cvmfs-config-osg
-             mountPath: /config-osg.opensciencegrid.org
+             mountPath: /cvmfs/config-osg.opensciencegrid.org
            - name: cvmfs-spt
-             mountPath: /spt.opensciencegrid.org
+             mountPath: /cvmfs/spt.opensciencegrid.org
            - name: cvmfs-connect
-             mountPath: /connect.opensciencegrid.org
+             mountPath: /cvmfs/connect.opensciencegrid.org
            - name: cvmfs-atlas
-             mountPath: /atlas.cern.ch
+             mountPath: /cvmfs/atlas.cern.ch
            - name: cvmfs-atlas-condb
-             mountPath: /atlas-condb.cern.ch
+             mountPath: /cvmfs/atlas-condb.cern.ch
            - name: cvmfs-atlas-nightlies
-             mountPath: /atlas-nightlies.cern.ch
+             mountPath: /cvmfs/atlas-nightlies.cern.ch
            - name: cvmfs-sft
-             mountPath: /sft.cern.ch
+             mountPath: /cvmfs/sft.cern.ch
            - name: cvmfs-geant4
-             mountPath: /geant4.cern.ch
+             mountPath: /cvmfs/geant4.cern.ch
            - name: cvmfs-grid
-             mountPath: /grid.cern.ch
+             mountPath: /cvmfs/grid.cern.ch
            - name: cvmfs-cms
-             mountPath: /cms.cern.ch
+             mountPath: /cvmfs/cms.cern.ch
       volumes:
        - name: cvmfs-oasis
          persistentVolumeClaim:
