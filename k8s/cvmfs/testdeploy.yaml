@@ -50,30 +50,40 @@ spec:
        - name: cvmfs-config-osg
          persistentVolumeClaim:
            claimName: csi-cvmfs-pvc-config-osg
+           readOnly: true
        - name: cvmfs-spt
          persistentVolumeClaim:
            claimName: csi-cvmfs-pvc-spt
+           readOnly: true
        - name: cvmfs-connect
          persistentVolumeClaim:
            claimName: csi-cvmfs-pvc-connect
+           readOnly: true
        - name: cvmfs-atlas
          persistentVolumeClaim:
            claimName: csi-cvmfs-pvc-atlas
+           readOnly: true
        - name: cvmfs-atlas-condb
          persistentVolumeClaim:
            claimName: csi-cvmfs-pvc-atlas-condb
+           readOnly: true
        - name: cvmfs-atlas-nightlies
          persistentVolumeClaim:
            claimName: csi-cvmfs-pvc-atlas-nightlies
+           readOnly: true
        - name: cvmfs-sft
          persistentVolumeClaim:
            claimName: csi-cvmfs-pvc-sft
+           readOnly: true
        - name: cvmfs-geant4
          persistentVolumeClaim:
            claimName: csi-cvmfs-pvc-geant4
+           readOnly: true
        - name: cvmfs-grid
          persistentVolumeClaim:
            claimName: csi-cvmfs-pvc-grid
+           readOnly: true
        - name: cvmfs-cms
          persistentVolumeClaim:
            claimName: csi-cvmfs-pvc-cms
+           readOnly: true
